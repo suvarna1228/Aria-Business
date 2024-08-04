@@ -75,6 +75,7 @@ nav{
   align-items: center;
   color: var(--white-color);
   z-index: 100;
+  backdrop-filter:blur(10px) grayscale(var(--image-greyscale))contrast var((--image-contrast)) ;
 }
 nav a{
   text-decoration: none;
@@ -94,13 +95,28 @@ nav img{
 nav ul{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.75rem;
   list-style: none;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 
-}.home{
+}
+nav ul .icon{
+  background-color: var(--light-green-color);
+  padding: 0.75rem;
+  cursor: pointer;
+  clip-path: polygon(0 25%, 0 75%, 50% 100%,100% 75%,100% 25%,50% 0%);
+}
+nav ul .icon:hover{
+  background-color: var(--white-color);
+  
+}
+nav ul .icon:hover a{
+  color: var(--light-green-color);
+}
+.home{
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('./home.jpg');
   background-size: cover;
   background-position: center;
@@ -358,8 +374,8 @@ nav ul{
   flex-shrink: 0;
   color: var(--white-color);
  }
- .call_me .content h3{
-  font-size: 1.75rem;
+ .call_me .content h2{
+  font-size: 1.25rem;
  }
  .call_me .content p{
   line-height: 1.5rem;
@@ -389,4 +405,35 @@ nav ul{
   border: 1px solid var(--form-input-border-color);
   padding: .75rem 1.5rem;
   border-radius: 5px;
+ }
+ .projects{
+  padding: 5rem 20vw;
+  background-color: var(--white-color);
+ }
+ .projects >span .projects > h3{
+  display: block; 
+  text-align: center;
+ }
+ .projects > h3{
+  color: var(--dark-grey-color);
+  font-size: 1.75rem;
+ }
+ .projects .category-list-conatiner ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 3rem 0;
+  list-style-type: none;
+ }
+ .projects .category-list-conatiner ul button{
+  background-color: var(--light-grey-border-color);
+  color: var(--dark-grey-color);
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+ }
+ .projects .category-list-conatiner ul button:hover,.projects .category-list-conatiner ul button.active{
+  background-color: var(--light-green-color);
+  color: var(--white-color);
  }
