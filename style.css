@@ -311,12 +311,41 @@ nav ul .icon:hover a{
   padding: 5rem 5rem  5rem 20vw ;
  
 }
+.services .propositions-1 h4{
+  color: var(--dark-grey-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.125s ease-in-out;
+}
+.services .propositions-1 p{
+  padding-left:2rem ;
+}
+.services .propositions-1 h4 span{
+  border-radius: 50%;
+  padding: 0 0.6rem;
+  border: 2px solid var(--dark-grey-color);
+  color: var(--dark-grey-color);
+  margin-right: 0.5rem;
+  transition: all 0.125s ease-in-out;
+}
+.services .propositions-1 h4.active span{
+  border: 2px solid var(--light-green-color);
+  background-color: var(--light-green-color);
+  color: var(--white-color);
+}
+.services .propositions-1 h4:not(.active):hover span{
+  border-color: var(--light-green-color);
+  color: var(--light-green-color);
+}
+.services .propositions-1 h4.active ,.services .propositions-1 h4:hover{
+  color: var(--light-green-color);
+}
 .services .propositions-2 .content{
   padding: 5rem 5rem  5rem 20vw;
  
 }
 .services .propositions h3{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--dark-grey-color);
 }
 .services .propositions p{
@@ -698,4 +727,31 @@ footer .footer-list-container .footer-item.wide{
   width: 50%;
   flex-grow: 0;
   flex-shrink: 0;
+}
+footer .footer-list-container .footer-item{
+  width: 15%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+footer .footer-list-container h5{
+ color: var(--white-color);
+ font-size: 1.3rem;
+ line-height: 1.3rem; 
+}
+footer .footer-list-container p{
+  line-height: 1.5rem;
+  color: var(--dark-white-color);
+}
+footer a{
+  color: var(--dark-white-color);
+  line-height: 2rem;
+}
+footer a:visited{
+  color: var(--dark-white-color);
+  line-height: 2rem;
+}
+footer .copyright{
+  padding-top: 2rem;
+  color: var(--dark-white-color);
+  line-height: 1.5rem;
 }
