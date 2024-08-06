@@ -61,6 +61,9 @@ button:hover {
 .underline{
   text-decoration: underline;
 }
+.green-text{
+  color: var(--light-green-color);
+}
 nav{
   display: flex;
   flex-direction: row;
@@ -337,18 +340,58 @@ nav ul .icon:hover a{
   border-color: var(--light-green-color);
   color: var(--light-green-color);
 }
-.services .propositions-1 h4.active ,.services .propositions-1 h4:hover{
+.services .propositions-1 h4.active , .services .propositions-1 h4:hover{
   color: var(--light-green-color);
 }
 .services .propositions-2 .content{
   padding: 5rem 5rem  5rem 20vw;
  
 }
+.services .propositions-2 .category-list-conatiner{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.services .propositions-2 .category-item h3{
+  color: var(--light-grey-color);
+  transition: color 0.125s ease-in-out;
+  cursor: pointer;
+}
+.services .propositions-2 .category-item.active h3, .services .propositions-2 .category-item:hover h3{
+  color: var(--light-grey-color);
+}
+.services .propositions-2 .skill-list-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.services .propositions-2 .skill-item h6{
+  color: var(--dark-grey-color);
+  font-size: 0.75rem;
+
+}
+.services .propositions-2 .skill-item .progress-bar{
+  height: 1.5rem;
+  background-color: var(--light-green-color);
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 0;
+}
+.services .propositions-2 .skill-item .progress-bar.p-100{
+  width: 100%;
+}  
+.services .propositions-2 .skill-item .progress-bar.p-76{
+  width: 76%;
+}  
+.services .propositions-2 .skill-item .progress-bar.p-90{
+  width: 90%;
+}  
 .services .propositions h3{
   font-size: 1.5rem;
   color: var(--dark-grey-color);
 }
-.services .propositions p{
+.services .propositions p{ 
   line-height: 1.5rem;
   color: var(--light-grey-color);
 }
